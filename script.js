@@ -4,19 +4,19 @@ function q1(arr) {
     const element = arr.filter(num => num > 0);
     const sum = element.reduce((acc, num) => acc + num, 0);
     const count = element.length;
-    return { sum, count };
+    return {sum, count};
 }
 
 function q2(arr) {
     const minElement = Math.min(...arr);
     const index = arr.findIndex(num => num === minElement);
-    return { minElement, index };
+    return {minElement, index};
 }
 
 function q3(arr) {
     const maxElement = Math.max(...arr);
     const index = arr.findIndex(num => num === maxElement);
-    return { maxElement, index };
+    return {maxElement, index};
 }
 
 function q4(arr) {
@@ -24,7 +24,7 @@ function q4(arr) {
     return negElement.length;
 }
 
-    function q5(arr) {
+function q5(arr) {
     const positiveElement = arr.filter(num => num > 0);
     const retPositiveElement = positiveElement.filter(num => num % 2 !== 0);
     return retPositiveElement.length;
